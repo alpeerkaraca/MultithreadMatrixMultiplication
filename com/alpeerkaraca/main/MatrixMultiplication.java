@@ -1,10 +1,5 @@
 package com.alpeerkaraca.main;
 
-import java.io.Console;
-import java.io.File;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
-
 import com.alpeerkaraca.matrix.MatrixMultiplier;
 import com.alpeerkaraca.util.FileUtil;
 
@@ -78,14 +73,14 @@ public class MatrixMultiplication {
         long endTime = System.currentTimeMillis();
 
         if (resultFileName == null) {
-            System.out.println("Result: ");
+            System.out.println("Sonuç: ");
             FileUtil.printMatrix(result);
-            System.out.println("Total process time: " + (endTime - startTime) + " ms");
+            System.out.println("Toplam Çalışma Zamanı: " + (endTime - startTime) + " ms");
         } else {
             FileUtil.writeMatrixToFile(result, resultFileName);
-            System.out.println("Result: ");
+            System.out.println("Sonuç: ");
             FileUtil.printMatrix(result);
-            System.out.println("Total process time: " + (endTime - startTime) + " ms");
+            System.out.println("Toplam Çalışma Zamanı: " + (endTime - startTime) + " ms");
         }
 
     }

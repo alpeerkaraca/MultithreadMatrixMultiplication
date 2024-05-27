@@ -116,13 +116,13 @@ public class FileUtil {
     }
 
     public static void printThreadProcessingTime(long threadStartTime, long threadEndTime, String threadName) {
-        System.out.println(threadName + ": Thread processing time: "
+        System.out.println(threadName + ": Thread Çalışma Süresi: "
                 + (threadEndTime - threadStartTime) + " ns");
     }
 
     public static void writeThreadProcessingTime(long startTime, long endTime, String threadName) {
         try (FileWriter fileWriter = new FileWriter("threadProcessingTime.txt", true)) {
-            fileWriter.write(threadName + " -> Thread processing time: " + (endTime - startTime) + " ns ~~ "
+            fileWriter.write(threadName + " -> Thread Çalışma Süresi: " + (endTime - startTime) + " ns ~~ "
                     + ((endTime - startTime) / 1000000) + "ms\n");
             fileWriter.close();
         } catch (IOException e) {

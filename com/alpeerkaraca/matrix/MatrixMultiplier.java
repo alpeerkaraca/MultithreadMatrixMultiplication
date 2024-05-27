@@ -1,7 +1,5 @@
 package com.alpeerkaraca.matrix;
 
-import java.io.File;
-
 import com.alpeerkaraca.util.FileUtil;
 
 public class MatrixMultiplier implements Runnable {
